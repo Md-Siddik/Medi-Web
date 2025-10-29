@@ -1,9 +1,10 @@
 import { ShoppingCart, User, Search } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto py-3 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-semibold text-emerald-600 tracking-tight">
           PharmaHub
@@ -11,15 +12,12 @@ const Navbar = () => {
 
         {/* Center Nav Links */}
         <div className="hidden md:flex space-x-6 text-gray-700">
-          <a href="#" className="hover:text-emerald-600 font-medium">
+          <Link to="/" className="hover:text-emerald-600 font-medium">
             Home
-          </a>
-          <a href="#" className="hover:text-emerald-600 font-medium">
-            Medicines
-          </a>
-          <a href="#" className="hover:text-emerald-600 font-medium">
+          </Link>
+          <Link to="/pharmacies" className="hover:text-emerald-600 font-medium">
             Pharmacies
-          </a>
+          </Link>
           <a href="#" className="hover:text-emerald-600 font-medium">
             Doctors
           </a>
