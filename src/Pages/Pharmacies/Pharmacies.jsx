@@ -123,7 +123,6 @@ const Pharmacies = () => {
 
                   <Link
                     to={`/pharmacies/${pharmacy.id}`}
-                    onClick={() => console.log("Navigating to", pharmacy.id)}
                     className="inline-block w-full text-center bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-700 hover:to-teal-600 text-white py-2.5 rounded-xl font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                   >
                     View Details

@@ -10,6 +10,7 @@ import Main from './Layout/Main/Main';
 import Error from './Components/Error';
 import Pharmacies from './Pages/Pharmacies/Pharmacies';
 import PharmacyDetails from './Pages/Pharmacies/PharmacyDetails';
+import { CartProvider } from './Components/CartContext';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>,
 )
